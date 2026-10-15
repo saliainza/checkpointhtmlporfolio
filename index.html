@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio de Salia Inza</title>
+</head>
+<body>
+    <header>
+        <nav>
+          <ul>
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#a-propos">À propos</a></li>
+            <li><a href="#experience">Expérience professionnelle</a></li>
+            <li><a href="#cv">CV</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="accueil">
+            <h1>Bienvenue sur mon portfolio</h1>
+            <p>Je suis Salia Inza, un développeur passionné par la création de solutions web innovantes.</p>
+            <h2>Écoutez ma présentation audio :</h2>
+            <audio controls>
+                <source src="audio.mp3" type="audio/mpeg">
+                Votre navigateur ne supporte pas l'élément audio.
+            </audio>
+        </section>
+        <section id="a-propos">
+            <h2>À propos de moi</h2>
+            <p>Je suis un développeur web avec une expérience dans la création de sites web et d'applications interactives. J'aime relever des défis et apprendre de nouvelles technologies.</p>
+            <h2>Regardez ma présentation vidéo :</h2>
+            <video controls>
+                <source src="video.mp4" type="video/mp4">
+                Votre navigateur ne supporte pas l'élément vidéo.
+            </video>
+        </section>
+        <section id="experience">   
+            <h2>Expérience professionnelle</h2>
+            <p>J'ai travaillé sur plusieurs projets, allant de la conception de sites web à la mise en place d'applications web complexes. Mon expérience m'a permis de développer des compétences solides en développement front-end et back-end.</p>
+        </section>
+        <section id="cv">
+            <h2>Mon CV</h2>
+            <p>Vous pouvez télécharger mon CV en cliquant sur le lien ci-dessous :</p>
+            <a href="CV UVCI SALIA INZA.pdf" download>Télécharger mon CV</a>   
+        </section>
+        <section id="contact">
+            <h2>Contactez-moi</h2>
+            <p>Vous pouvez me contacter via le formulaire ci-dessous :</p>
+            <form action="submit_form.php" method="post">
+                <fieldset>
+                    <legend>Formulaire de contact</legend>
+                <label for="nom">Nom :</label> <br>
+                <input type="text" id="nom" name="nom" required> <br><br>
+                <label for="email">Email :</label> <br>
+                <input type="email" id="email" name="email" required> <br>
+                <label for="message">Message :</label> <br> <br>
+                <textarea id="message" name="message" required></textarea><br>
+                <button type="submit">Envoyer</button><br>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
